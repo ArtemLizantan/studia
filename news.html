@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+  <title>Главная</title>
+</head>
+
+  <div id="preloader">
+  <div id="loader-text"></div>
+</div>
+
+
+  <body data-lp>
+    <div class="_container">
+  <div data-popup="popup" class="popup _overlay-bg header__popup">
+    <div class="popup__close button-close">X</div>
+    <div class="popup__body">
+      <div class="popup__block">
+        <div class="popup__form-block">
+          <form action="" class="popup__form">
+            <div class="popup__title">Calculate the cost of work</div>
+            <div class="popup__top-wrapper">
+              <div class="popup__form-input-box">
+                <input class="form__input form-name" type="text" name="name" placeholder="Name">
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-last-name" type="text" name="last-name" placeholder="Last name">
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-tel" type="tel" name="phone" placeholder="Phone">
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-city" type="text" name="city" placeholder="Your city">
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-email" type="email" name="email" placeholder="Email">
+              </div>
+              <div class="popup__form-input-box">
+                <select name="select" id="select">
+                  <option value="Property type">Property type</option>
+                  <option value="Property type2">Property type1</option>
+                  <option value="Property type3">Property type2</option>
+                </select>
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-comment" type="text" name="comment" placeholder="Your comment">
+              </div>
+            </div>
+            <div class="popup__bottom-wrapper">
+              <div class="popup__bottom-title">Area (m2)</div>
+              <ul class="popup__line">
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">to 50</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">50-150</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">150-250</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">250-400</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">400-600</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">600-800</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">800-1000</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">1000+</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+              </ul>
+              <div class="popup__line-bottom-wrapper">
+                <div class="popup__upload">
+                  <input type="file" name="file" id="file" class="popup__input-file">
+                  <label class="popup__upload-label" for="file" class="btn">
+                    <span><img src="./images/popup/file.svg" alt=""></span>
+                    <span class="popup__upload-flex">
+                      <span id="file-name" class="popup__upload-title">Attach your file</span>
+                      <span class="popup__upload-subtitle">File size not more than 10 MB</span>
+                    </span>
+                  </label>
+                </div>
+                <button data-type-thank="thank-popup" class="header__button-link form__button popup__submit" type="submit">
+                  Send Request
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="popup popup__thank">
+    <div class="popup__close popup__thank-close">X</div>
+    <div class="popup__body popup__thank__body">
+      <div class="popup__block">
+        <div class="popup__title">Thank you for your message!</div>
+        <div class="popup__subtitle popup__thank__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
+          felis, aliquam eu enim sed, ornare pretium velit.
+        </div>
+        <div class="popup__submit popup__thank__again">
+          <button data-type="popup" class="header__button-link form__button popup__submit popup__thank-button" type="submit">
+            Send Request
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="wrapper">
+      <header class="header white-header">
+  <div class="_container header__container">
+    <div class="header__body white-header__body">
+      <div class="header__left white-header__left">
+        <div class="header__logo">
+          <a href="index.html" class="header__link-logo white-header__logo">Logo</a>
+        </div>
+        <div class="header__burger-items white-header__burger-items">
+          <select class="select__mobile white-header__select-mobile" name="select" id="">
+            <option class="select__option" value="value1" selected="selected">En</option>
+            <option class="select__option" value="value2">Ru</option>
+          </select>
+          <div class="icon-menu menu__icon white-header__burger">
+            <span></span>
+            <span></span>
+          </div>
+          <p class="menu__link burger-text">Menu</p>
+        </div>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item-mobile">
+              <a href="index.html" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="project.html" class="menu__link white-header__link">Projects</a>
+            </li>
+            <li class="menu__item">
+              <a href="about.html" class="menu__link white-header__link">About us</a>
+            </li>
+            <li class="menu__item">
+              <a href="news.html" class="menu__link white-header__link">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a href="contact.html" class="menu__link white-header__link">Contacts</a>
+            </li>
+            <div class="header__burger-bottom"></div>
+            <div class="header__button header__button-mobile">
+              <a data-type="popup" href="#" class="header__button-link">Send Request</a>
+            </div>
+          </ul>
+          <div class="_container header__container">
+            <div class="header__burger-bottom-info">
+              <div class="header__burger-bottom-social">
+                <h4>Fb</h4>
+                <h4>In</h4>
+                <h4>Be</h4>
+              </div>
+              <div class="header__bottom-info-block">
+                <select class="header__select hero__select" name="hero__select" id="">
+                  <option class="select__option" value="value1" selected="selected">
+                    Berlin
+                  </option>
+                  <option class="select__option" value="value2">Kharkiv</option>
+                  <option class="select__option" value="value2">Kiev</option>
+                </select>
+                <div class="header__bottom-social">
+                  <a href="tel:+380983527547" class="hero__bottom-tel">+380983527547</a>
+                  <a href="#" class="hero__bottom-email">E: info@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header__rigth">
+        <div class="dropdown header__dropdown">
+          <div class="dropdown__body">
+            <select class="select white-header__select" name="select" id="">
+              <option class="select__option" value="value1" selected="selected">En</option>
+              <option class="select__option" value="value2">Ru</option>
+            </select>
+          </div>
+        </div>
+        <div class="header__button">
+          <a data-type="popup" href="#" class="header__button-link white-header__button-link">Send Request</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="_container">
+    <div data-popup="popup" class="popup _overlay-bg header__popup">
+      <div class="popup__close button-close">X</div>
+      <div class="popup__body">
+        <div class="popup__block">
+          <div class="popup__form-block">
+            <form action="" class="popup__form">
+              <div class="popup__title">Calculate the cost of work</div>
+              <div class="popup__top-wrapper">
+                <div class="popup__form-input-box">
+                  <input class="form__input form-name" type="text" name="name" placeholder="Name">
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-last-name" type="text" name="last-name" placeholder="Last name">
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-tel" type="tel" name="phone" placeholder="Phone">
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-city" type="text" name="city" placeholder="Your city">
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-email" type="email" name="email" placeholder="Email">
+                </div>
+                <div class="popup__form-input-box">
+                  <select name="select" id="select">
+                    <option value="Property type">Property type</option>
+                    <option value="Property type2">Property type1</option>
+                    <option value="Property type3">Property type2</option>
+                  </select>
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-comment" type="text" name="comment" placeholder="Your comment">
+                </div>
+              </div>
+              <div class="popup__bottom-wrapper">
+                <div class="popup__bottom-title">Area (m2)</div>
+                <ul class="popup__line">
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">to 50</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">50-150</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">150-250</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">250-400</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">400-600</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">600-800</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">800-1000</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">1000+</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                </ul>
+                <div class="popup__line-bottom-wrapper">
+                  <div class="popup__upload">
+                    <input type="file" name="file" id="file" class="popup__input-file">
+                    <label class="popup__upload-label" for="file" class="btn">
+                      <span><img src="./images/popup/file.svg" alt=""></span>
+                      <span class="popup__upload-flex">
+                        <span id="file-name" class="popup__upload-title">Attach your file</span>
+                        <span class="popup__upload-subtitle">File size not more than 10 MB</span>
+                      </span>
+                    </label>
+                  </div>
+                  <button class="header__button-link form__button popup__submit" type="submit">
+                    Send Request
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="page">
+        <div data-observ></div>
+        <section class="news">
+  <div class="_container news__container">
+    <div class="news__body">
+      <div class="news__top projects__top">
+        <div class="news__left projects__left">
+          <div class="news__title projects__title">Our latest news</div>
+        </div>
+        <div class="news__rigth projects__rigth">
+          <div class="news__box-rigth">
+            <ul class="news__items projects__items">
+              <li class="news__item projects__item">
+                <button data-filter=".category-all" class="news__item-button projects__item-button">
+                  All
+                </button>
+              </li>
+              <li class="news__item projects__item">
+                <button data-filter=".category-blog" class="news__item-button projects__item-button">
+                  Blog
+                </button>
+              </li>
+              <li class="news__item projects__item">
+                <button data-filter=".category-news" class="news__item-button projects__item-button">
+                  News
+                </button>
+              </li>
+              <li class="news__item projects__item">
+                <button data-filter=".category-design" class="news__item-button projects__item-button">
+                  Advice from the designer
+                </button>
+              </li>
+            </ul>
+            <div class="custom-select-mobile">
+              <div class="custom-select">
+                <div class="select-header">All</div>
+                <ul class="select-list">
+                  <li data-filter=".category-all">All</li>
+                  <li data-filter=".category-blog">Blog</li>
+                  <li data-filter=".category-news">News</li>
+                  <li data-filter=".category-design">Advice</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects__bottom">
+        <div id="mixtwo" class="news__bottom-body project__bottom-body projects__bottom-body">
+          <div class="category-all mix category-news news__bottom-box project__bottom-box project__bottom-box__big projects__big">
+            <div class="project__item">
+              <div class="project__item-body news__item-body-big">
+                <div class="news__big news__big-gap">
+                  <div class="news__big-left">
+                    <a href="one-news.html" class="">
+                      <div class="news__left-title">
+                        5 smart tips for productive collaboration with the
+                        designer
+                      </div>
+                      <div class="news__left-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras vel gravida urna. Donec blandit sapien eu diam
+                        ullamcorper euismod. Nam tempus pellentesque ligula ut
+                        aliquam.
+                      </div>
+                      <a href="#" class="news__left-button news__left-button__mobile">Discover more</a>
+                    </a>
+                  </div>
+                  <div class="news__big-rigth">
+                    <img id="news-img-one" src="./images/news/1.png" alt="" class="news__big-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news__bottom-box project__bottom-box">
+            <div class="category-all mix category-design project__item">
+              <div class="project__item-body">
+                <img id="news-img-two" src="./images/project/2.png" alt="" class="news__item-img project__item-img">
+                <div class="project__block-hover">
+                  <div id="news-one" class="project__block-hover__body">
+                    <div class="project__block__top">
+                      <ul class="project__block-items"></ul>
+                    </div>
+                    <div class="project__block__bottom">
+                      <div class="news__block-title">
+                        Non-standard plinth options
+                      </div>
+                      <div class="project__block__button"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-all mix category-design project__item">
+              <div class="project__item-body">
+                <img id="news-img-three" src="./images/project/8.png" alt="" class="news__item-img project__item-img">
+                <div class="project__block-hover">
+                  <div id="news-two" class="project__block-hover__body">
+                    <div class="project__block__top">
+                      <ul class="project__block-items"></ul>
+                    </div>
+                    <div class="project__block__bottom">
+                      <div class="news__block-title">
+                        Interior design,<br>
+                        LCD Rybalsky
+                      </div>
+                      <div class="project__block__button"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news__bottom-box project__bottom-box project__bottom-box__big projects__big">
+            <div class="category-all mix category-blog news__big news__big-bottom">
+              <div class="news__big-left">
+                <a href="one-news.html" class="">
+                  <div class="news__left-title news__left-title-bottom">
+                    5 smart tips for productive collaboration with the designer
+                  </div>
+                  <div class="news__left-subtitle news__left-subtitle-none">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras vel gravida urna. Donec blandit sapien eu diam
+                    ullamcorper euismod. Nam tempus pellentesque ligula ut
+                    aliquam.
+                  </div>
+                  <a href="#" class="news__left-button news__left-button-second-mobile">Discover more</a>
+                </a>
+              </div>
+              <div class="news__big-rigth">
+                <img id="news-img-four" src="./images/news/1.png" alt="" class="news__big-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__pages">
+        <div class="news__pages-body">
+          <button class="news__pages-button-prev">
+            <img src="./images/news/arrow-left.png" alt="">
+          </button>
+          <ul class="news__pages-list">
+            <li>01</li>
+            <li>02</li>
+            <li>03</li>
+            <li>...</li>
+            <li>15</li>
+          </ul>
+          <button class="news__pages-button-next">
+            <img src="./images/news/arrow-right.png" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <div class="feedback">
+  <div class="feedback__body">
+    <div class="feedback__bg">
+      <img class="feedback-img" src="./images/news/feedback.png" alt="">
+    </div>
+    <div class="_container">
+      <div class="feedback__block">
+        <div class="feedback__left">
+          <div class="feedback__title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+        </div>
+        <div class="feedback__rigth">
+          <div class="feedback__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
+            felis, aliquam.
+          </div>
+          <form action="" class="feedback__form">
+            <input class="feedback__input" type="email" placeholder="Email">
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+<footer class="footer">
+  <div class="_container footer__container">
+    <div class="footer__body">
+      <div class="footer__copyrigth">
+        <div class="footer__left">© Copyright 2018. All rights reserved</div>
+        <div class="footer__rigth">
+          <div class="footer__rigth-body">
+            <h5 class="footer__text">Made with love in</h5>
+            <div class="footer__text-wrap">
+              <div class="footer__first">The First</div>
+              <div class="footer__second">The Last.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

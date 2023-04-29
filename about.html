@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+  <title>Главная</title>
+</head>
+
+  <div id="preloader">
+  <div id="loader-text"></div>
+</div>
+
+
+  <body data-lp>
+    <div class="_container">
+  <div data-popup="popup" class="popup _overlay-bg header__popup">
+    <div class="popup__close button-close">X</div>
+    <div class="popup__body">
+      <div class="popup__block">
+        <div class="popup__form-block">
+          <form action="" class="popup__form">
+            <div class="popup__title">Calculate the cost of work</div>
+            <div class="popup__top-wrapper">
+              <div class="popup__form-input-box">
+                <input class="form__input form-name" type="text" name="name" placeholder="Name">
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-last-name" type="text" name="last-name" placeholder="Last name">
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-tel" type="tel" name="phone" placeholder="Phone">
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-city" type="text" name="city" placeholder="Your city">
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-email" type="email" name="email" placeholder="Email">
+              </div>
+              <div class="popup__form-input-box">
+                <select name="select" id="select">
+                  <option value="Property type">Property type</option>
+                  <option value="Property type2">Property type1</option>
+                  <option value="Property type3">Property type2</option>
+                </select>
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-comment" type="text" name="comment" placeholder="Your comment">
+              </div>
+            </div>
+            <div class="popup__bottom-wrapper">
+              <div class="popup__bottom-title">Area (m2)</div>
+              <ul class="popup__line">
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">to 50</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">50-150</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">150-250</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">250-400</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">400-600</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">600-800</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">800-1000</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">1000+</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+              </ul>
+              <div class="popup__line-bottom-wrapper">
+                <div class="popup__upload">
+                  <input type="file" name="file" id="file" class="popup__input-file">
+                  <label class="popup__upload-label" for="file" class="btn">
+                    <span><img src="./images/popup/file.svg" alt=""></span>
+                    <span class="popup__upload-flex">
+                      <span id="file-name" class="popup__upload-title">Attach your file</span>
+                      <span class="popup__upload-subtitle">File size not more than 10 MB</span>
+                    </span>
+                  </label>
+                </div>
+                <button data-type-thank="thank-popup" class="header__button-link form__button popup__submit" type="submit">
+                  Send Request
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="popup popup__thank">
+    <div class="popup__close popup__thank-close">X</div>
+    <div class="popup__body popup__thank__body">
+      <div class="popup__block">
+        <div class="popup__title">Thank you for your message!</div>
+        <div class="popup__subtitle popup__thank__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
+          felis, aliquam eu enim sed, ornare pretium velit.
+        </div>
+        <div class="popup__submit popup__thank__again">
+          <button data-type="popup" class="header__button-link form__button popup__submit popup__thank-button" type="submit">
+            Send Request
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="wrapper">
+      <header class="header white-header">
+  <div class="_container header__container">
+    <div class="header__body white-header__body">
+      <div class="header__left white-header__left">
+        <div class="header__logo">
+          <a href="index.html" class="header__link-logo white-header__logo">Logo</a>
+        </div>
+        <div class="header__burger-items white-header__burger-items">
+          <select class="select__mobile white-header__select-mobile" name="select" id="">
+            <option class="select__option" value="value1" selected="selected">En</option>
+            <option class="select__option" value="value2">Ru</option>
+          </select>
+          <div class="icon-menu menu__icon white-header__burger">
+            <span></span>
+            <span></span>
+          </div>
+          <p class="menu__link burger-text">Menu</p>
+        </div>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item-mobile">
+              <a href="index.html" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="project.html" class="menu__link white-header__link">Projects</a>
+            </li>
+            <li class="menu__item">
+              <a href="about.html" class="menu__link white-header__link">About us</a>
+            </li>
+            <li class="menu__item">
+              <a href="news.html" class="menu__link white-header__link">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a href="contact.html" class="menu__link white-header__link">Contacts</a>
+            </li>
+            <div class="header__burger-bottom"></div>
+            <div class="header__button header__button-mobile">
+              <a data-type="popup" href="#" class="header__button-link">Send Request</a>
+            </div>
+          </ul>
+          <div class="_container header__container">
+            <div class="header__burger-bottom-info">
+              <div class="header__burger-bottom-social">
+                <h4>Fb</h4>
+                <h4>In</h4>
+                <h4>Be</h4>
+              </div>
+              <div class="header__bottom-info-block">
+                <select class="header__select hero__select" name="hero__select" id="">
+                  <option class="select__option" value="value1" selected="selected">
+                    Berlin
+                  </option>
+                  <option class="select__option" value="value2">Kharkiv</option>
+                  <option class="select__option" value="value2">Kiev</option>
+                </select>
+                <div class="header__bottom-social">
+                  <a href="tel:+380983527547" class="hero__bottom-tel">+380983527547</a>
+                  <a href="#" class="hero__bottom-email">E: info@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header__rigth">
+        <div class="dropdown header__dropdown">
+          <div class="dropdown__body">
+            <select class="select white-header__select" name="select" id="">
+              <option class="select__option" value="value1" selected="selected">En</option>
+              <option class="select__option" value="value2">Ru</option>
+            </select>
+          </div>
+        </div>
+        <div class="header__button">
+          <a data-type="popup" href="#" class="header__button-link white-header__button-link">Send Request</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="_container">
+    <div data-popup="popup" class="popup _overlay-bg header__popup">
+      <div class="popup__close button-close">X</div>
+      <div class="popup__body">
+        <div class="popup__block">
+          <div class="popup__form-block">
+            <form action="" class="popup__form">
+              <div class="popup__title">Calculate the cost of work</div>
+              <div class="popup__top-wrapper">
+                <div class="popup__form-input-box">
+                  <input class="form__input form-name" type="text" name="name" placeholder="Name">
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-last-name" type="text" name="last-name" placeholder="Last name">
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-tel" type="tel" name="phone" placeholder="Phone">
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-city" type="text" name="city" placeholder="Your city">
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-email" type="email" name="email" placeholder="Email">
+                </div>
+                <div class="popup__form-input-box">
+                  <select name="select" id="select">
+                    <option value="Property type">Property type</option>
+                    <option value="Property type2">Property type1</option>
+                    <option value="Property type3">Property type2</option>
+                  </select>
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-comment" type="text" name="comment" placeholder="Your comment">
+                </div>
+              </div>
+              <div class="popup__bottom-wrapper">
+                <div class="popup__bottom-title">Area (m2)</div>
+                <ul class="popup__line">
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">to 50</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">50-150</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">150-250</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">250-400</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">400-600</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">600-800</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">800-1000</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">1000+</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                </ul>
+                <div class="popup__line-bottom-wrapper">
+                  <div class="popup__upload">
+                    <input type="file" name="file" id="file" class="popup__input-file">
+                    <label class="popup__upload-label" for="file" class="btn">
+                      <span><img src="./images/popup/file.svg" alt=""></span>
+                      <span class="popup__upload-flex">
+                        <span id="file-name" class="popup__upload-title">Attach your file</span>
+                        <span class="popup__upload-subtitle">File size not more than 10 MB</span>
+                      </span>
+                    </label>
+                  </div>
+                  <button class="header__button-link form__button popup__submit" type="submit">
+                    Send Request
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="page">
+        <div data-observ></div>
+        <section class="about-hero">
+  <div class="_container about-hero__container">
+    <div class="about-hero__body">
+      <div class="about-hero__bg">
+        <img src="./images/about/bg1.png" alt="" class="about-hero__img">
+      </div>
+      <div class="about-hero__box">
+        <div class="about-hero__title">Company Philosophy</div>
+        <div class="about-hero__subtitle">
+          The basic philosophy of our studio is to create individual,
+          aesthetically stunning solutions for our customers by lightning-fast
+          development of projects employing unique styles and architecture.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="about-swiper">
+  <div class="about-swiper__content">
+    <h2 data-aos-duration="800" data-aos="fade-right" class="about-swiper__title company__title">Company Philosophy</h2>
+    <p data-aos="zoom-in" data-aos-duration="1400" class="about-swiper__subtitle">
+      The basic philosophy of our studio is to create individual, aesthetically
+      stunning solutions for our customers by lightning-fast development of
+      projects employing unique styles and architecture.
+    </p>
+  </div>
+  <div class="about-swiper__slider-container slider-container">
+    <div class="about-swiper__swiper swiper">
+      <div class="swiper-wrapper">
+        <div class="about-swiper__slide swiper-slide">
+          <img src="./images/about/1.png" alt="">
+        </div>
+        <div class="about-swiper__slide swiper-slide">
+          <img src="./images/about/1.png" alt="">
+        </div>
+        <div class="about-swiper__slide swiper-slide">
+          <img src="./images/about/1.png" alt="">
+        </div>
+        <div class="about-swiper__slide swiper-slide">
+          <img src="./images/about/1.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="about-swiper__control">
+      <div class="about-swiper__button-next">
+        <img src="./images/about/arrow-rigth.svg" alt="">
+      </div>
+      <div class="about-swiper__button-prev">
+        <img src="./images/about/arrow-left.svg" alt="">
+      </div>
+      <div class="about-swiper__pagination swiper-pagination"></div>
+      <span class="about-swiper__current-slide">01</span>
+      <span class="about-swiper__total-slide">04</span>
+    </div>
+  </div>
+</section>
+
+        <section class="about-stats">
+  <div class="_container about-stats__container">
+    <div class="about-stats__body">
+      <div class="about-stats__box">
+        <div class="about-stats__left">
+          <div data-aos-offset="300" data-aos-duration="800" data-aos="zoom-out-right" data-aos-offset="250" class="about-stats__image">
+            <img src="./images/about/stats.png" alt="" class="about-stats__img">
+          </div>
+        </div>
+        <div class="about-stats__rigth">
+          <div class="about-stats__top">
+            <div class="about-stats__numbers">
+              <div class="about-stats__column">
+                <div class="about-stats__flex">
+                  <div class="about-stats__column-title">6</div>
+                  <div class="about-stats__column-subtitle">
+                    years expertise
+                  </div>
+                </div>
+              </div>
+              <div class="about-stats__column">
+                <div class="about-stats__flex">
+                  <div class="about-stats__column-title">100+</div>
+                  <div class="about-stats__column-subtitle">
+                    completed projects
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-stats__numbers">
+              <div class="about-stats__column">
+                <div class="about-stats__flex about-stats__flex-item-one">
+                  <div class="about-stats__column-title">25+</div>
+                  <div class="about-stats__column-subtitle">
+                    companies cooperate
+                  </div>
+                </div>
+              </div>
+              <div class="about-stats__column">
+                <div class="about-stats__flex about-stats__flex-item">
+                  <div class="about-stats__column-title">2014</div>
+                  <div class="about-stats__column-subtitle">
+                    year of market entry
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-stats__bottom">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="about-swiper__subtitle about-swiper__subtitle-one">
+              The basic philosophy of our studio is to create individual,
+              aesthetically stunning solutions for our customers by
+              lightning-fast development of projects employing unique styles and
+              architecture.
+            </div>
+            <div class="about-stats__img-absolute">
+                <img src="./images/about/bg.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="about-personal">
+  <div class="_container about-personal__container">
+    <div class="about-personal__body">
+      <div class="about-personal__top">
+        <div class="about-personal__top-left">
+          <div data-aos-duration="800" data-aos="fade-right" data-aos-offset="250" class="about-personal__title">
+            Roman Viktorovich
+          </div>
+          <div data-aos-duration="1000" data-aos="fade-left" data-aos-offset="200" class="about-personal__subtitle">
+            Founder and CEO of Hilight
+          </div>
+          <div class="about-personal__text company__subtitle-bottom">
+            <p data-aos="zoom-in" data-aos-duration="1000">
+              We can also help you create harmony out of seemingly completely
+              incompatible elements in the interior or the exterior design.
+            </p>
+          </div>
+        </div>
+        <div class="about-personal__top-rigth">
+          <div class="about-personal__image">
+            <img data-aos-offset="300" data-aos-duration="800" data-aos="zoom-out-left" src="./images/about/5.png" alt="" class="about-personal__img">
+          </div>
+        </div>
+      </div>
+      <div class="about-personal__bottom">
+        <div class="about-personal__bottom-left">
+          <div class="about-personal__bottom-image">
+            <img src="./images/about/6.png" alt="" class="about-personal__bottom-img">
+          </div>
+        </div>
+        <div class="about-personal__bottom-rigth">
+          <div class="about-personal__bottom-box">
+            <div class="about-personal__numbers">
+              <div class="about-personal__item">
+                <div id="five" class="about-stats__column-title">5</div>
+                <div class="about-stats__column-subtitle about-personal__column-subtitle">
+                  companies
+                  cooperate
+                </div>
+              </div>
+              <div class="about-personal__item">
+                <div class="about-stats__column-title">4</div>
+                <div class="about-stats__column-subtitle about-personal__column-subtitle">
+                  year of market entry
+                </div>
+              </div>
+              <div class="about-personal__item about-personal__item-last">
+                <div class="about-stats__column-title">3</div>
+                <div class="about-stats__column-subtitle about-personal__column-subtitle">
+                  companies cooperate
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="about-personal__numbers-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+              nisl sit risus pharetra nisl metus aliquet. Nibh eu posuere
+              sodales sem tellus. Vulputate est nisl convallis sed. Fames in
+              dignissim erat fermentum sed sed. In massa, adipiscing aliquet mi
+              semper facilisis ornare nisi. Non elit amet enim at cursus mauris
+              senectus dolor ac. Egestas lectus in praesent mi arcu. Vitae nisl
+              viverra enim nulla at. Fusce porta elementum quis.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="about__black-gallery gallery">
+    <div class="_container gallery__container">
+      <div class="gallery__body">
+        <div class="gallery__box">
+          <div class="about__black-title gallery__title">
+            <h3 data-aos="zoom-in" data-aos-duration="1000">@lorem.ipsum</h3>
+          </div>
+          <div class="about__black-subtitle gallery__subtitle">
+            <p data-aos="zoom-in" data-aos-duration="2000">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              ullamcorper eu mauris vitae posuere.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__images">
+        <a href="">
+          <img data-aos="fade-up" data-aos-duration="1000" class="gallery__img-one" src="./images/gallery/1.jpg" alt="">
+        </a>
+        <a href="">
+          <img data-aos="fade-up" data-aos-duration="1500" class="gallery__img-two" src="./images/gallery/2.jpg" alt="">
+        </a>
+        <a href="">
+          <img data-aos="fade-up" data-aos-duration="1000" class="gallery__img-three" src="./images/gallery/3.jpg" alt="">
+        </a>
+        <a href="">
+          <img data-aos="fade-up" data-aos-duration="1500" class="gallery__img-four" src="./images/gallery/4.jpg" alt="">
+        </a>
+        <a href="">
+          <img data-aos="fade-up" data-aos-duration="1000" class="gallery__img-five" src="./images/gallery/5.jpg" alt="">
+        </a>
+        <a href="">
+          <img data-aos="fade-up" data-aos-duration="1500" class="gallery__img-six" src="./images/gallery/6.jpg" alt="">
+        </a>
+        <a href="">
+          <img data-aos="fade-up" data-aos-duration="1000" class="gallery__img-seven" src="./images/gallery/7.jpg" alt="">
+        </a>
+        <a href="">
+          <img data-aos="fade-up" data-aos-duration="1500" class="gallery__img-eigth" src="./images/gallery/8.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+  
+      </main>
+      <section class="about-footer">
+  <div class="_container about-footer__container">
+    <div class="about-footer__body">
+      <div class="about-footer__box">
+        <div class="about-footer__left">
+          <div data-aos="zoom-in" data-aos-duration="1000" class="about-footer__title">
+            Do you want to work in our team?
+          </div>
+          <form action="" class="about-footer__form feedback__form">
+            <input class="about-footer__input feedback__input" type="email" placeholder="Email">
+          </form>
+        </div>
+        <div class="about-footer__rigth">
+          <div data-aos="zoom-in" data-aos-duration="1000" class="about-footer__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
+            felis, aliquam.
+          </div>
+          <div class="about-footer__bottom">
+            <div class="about-footer__bottom-left">
+              <div class="about-footer__bottom-email">info@hi-light.pl</div>
+            </div>
+            <div class="about-footer__bottom-rigth">
+              <ul class="about-footer__bottom-links">
+                <li>Fb</li>
+                <li>In</li>
+                <li>Be</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="_container footer__container">
+    <div class="footer__body">
+      <div class="footer__copyrigth">
+        <div class="footer__left">© Copyright 2018. All rights reserved</div>
+        <div class="footer__rigth">
+          <div class="footer__rigth-body">
+            <h5 class="footer__text">Made with love in</h5>
+            <div class="footer__text-wrap">
+              <div class="footer__first">The First</div>
+              <div class="footer__second">The Last.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</section>
+
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

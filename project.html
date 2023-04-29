@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+  <title>Главная</title>
+</head>
+
+  <div id="preloader">
+  <div id="loader-text"></div>
+</div>
+
+
+  <body data-lp>
+    <div class="_container">
+  <div data-popup="popup" class="popup _overlay-bg header__popup">
+    <div class="popup__close button-close">X</div>
+    <div class="popup__body">
+      <div class="popup__block">
+        <div class="popup__form-block">
+          <form action="" class="popup__form">
+            <div class="popup__title">Calculate the cost of work</div>
+            <div class="popup__top-wrapper">
+              <div class="popup__form-input-box">
+                <input class="form__input form-name" type="text" name="name" placeholder="Name">
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-last-name" type="text" name="last-name" placeholder="Last name">
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-tel" type="tel" name="phone" placeholder="Phone">
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-city" type="text" name="city" placeholder="Your city">
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-email" type="email" name="email" placeholder="Email">
+              </div>
+              <div class="popup__form-input-box">
+                <select name="select" id="select">
+                  <option value="Property type">Property type</option>
+                  <option value="Property type2">Property type1</option>
+                  <option value="Property type3">Property type2</option>
+                </select>
+              </div>
+              <div class="popup__form-input-box">
+                <input class="form__input form-comment" type="text" name="comment" placeholder="Your comment">
+              </div>
+            </div>
+            <div class="popup__bottom-wrapper">
+              <div class="popup__bottom-title">Area (m2)</div>
+              <ul class="popup__line">
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">to 50</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">50-150</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">150-250</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">250-400</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">400-600</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">600-800</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">800-1000</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+                <li class="popup__line-select">
+                  <button class="popup__line-button">
+                    <span class="popup__line-text">1000+</span>
+                    <span class="popup__line-point"></span>
+                  </button>
+                  <div class="popup__select-line"></div>
+                </li>
+              </ul>
+              <div class="popup__line-bottom-wrapper">
+                <div class="popup__upload">
+                  <input type="file" name="file" id="file" class="popup__input-file">
+                  <label class="popup__upload-label" for="file" class="btn">
+                    <span><img src="./images/popup/file.svg" alt=""></span>
+                    <span class="popup__upload-flex">
+                      <span id="file-name" class="popup__upload-title">Attach your file</span>
+                      <span class="popup__upload-subtitle">File size not more than 10 MB</span>
+                    </span>
+                  </label>
+                </div>
+                <button data-type-thank="thank-popup" class="header__button-link form__button popup__submit" type="submit">
+                  Send Request
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="popup popup__thank">
+    <div class="popup__close popup__thank-close">X</div>
+    <div class="popup__body popup__thank__body">
+      <div class="popup__block">
+        <div class="popup__title">Thank you for your message!</div>
+        <div class="popup__subtitle popup__thank__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
+          felis, aliquam eu enim sed, ornare pretium velit.
+        </div>
+        <div class="popup__submit popup__thank__again">
+          <button data-type="popup" class="header__button-link form__button popup__submit popup__thank-button" type="submit">
+            Send Request
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="wrapper">
+      <header class="header white-header">
+  <div class="_container header__container">
+    <div class="header__body white-header__body">
+      <div class="header__left white-header__left">
+        <div class="header__logo">
+          <a href="index.html" class="header__link-logo white-header__logo">Logo</a>
+        </div>
+        <div class="header__burger-items white-header__burger-items">
+          <select class="select__mobile white-header__select-mobile" name="select" id="">
+            <option class="select__option" value="value1" selected="selected">En</option>
+            <option class="select__option" value="value2">Ru</option>
+          </select>
+          <div class="icon-menu menu__icon white-header__burger">
+            <span></span>
+            <span></span>
+          </div>
+          <p class="menu__link burger-text">Menu</p>
+        </div>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item-mobile">
+              <a href="index.html" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="project.html" class="menu__link white-header__link">Projects</a>
+            </li>
+            <li class="menu__item">
+              <a href="about.html" class="menu__link white-header__link">About us</a>
+            </li>
+            <li class="menu__item">
+              <a href="news.html" class="menu__link white-header__link">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a href="contact.html" class="menu__link white-header__link">Contacts</a>
+            </li>
+            <div class="header__burger-bottom"></div>
+            <div class="header__button header__button-mobile">
+              <a data-type="popup" href="#" class="header__button-link">Send Request</a>
+            </div>
+          </ul>
+          <div class="_container header__container">
+            <div class="header__burger-bottom-info">
+              <div class="header__burger-bottom-social">
+                <h4>Fb</h4>
+                <h4>In</h4>
+                <h4>Be</h4>
+              </div>
+              <div class="header__bottom-info-block">
+                <select class="header__select hero__select" name="hero__select" id="">
+                  <option class="select__option" value="value1" selected="selected">
+                    Berlin
+                  </option>
+                  <option class="select__option" value="value2">Kharkiv</option>
+                  <option class="select__option" value="value2">Kiev</option>
+                </select>
+                <div class="header__bottom-social">
+                  <a href="tel:+380983527547" class="hero__bottom-tel">+380983527547</a>
+                  <a href="#" class="hero__bottom-email">E: info@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header__rigth">
+        <div class="dropdown header__dropdown">
+          <div class="dropdown__body">
+            <select class="select white-header__select" name="select" id="">
+              <option class="select__option" value="value1" selected="selected">En</option>
+              <option class="select__option" value="value2">Ru</option>
+            </select>
+          </div>
+        </div>
+        <div class="header__button">
+          <a data-type="popup" href="#" class="header__button-link white-header__button-link">Send Request</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="_container">
+    <div data-popup="popup" class="popup _overlay-bg header__popup">
+      <div class="popup__close button-close">X</div>
+      <div class="popup__body">
+        <div class="popup__block">
+          <div class="popup__form-block">
+            <form action="" class="popup__form">
+              <div class="popup__title">Calculate the cost of work</div>
+              <div class="popup__top-wrapper">
+                <div class="popup__form-input-box">
+                  <input class="form__input form-name" type="text" name="name" placeholder="Name">
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-last-name" type="text" name="last-name" placeholder="Last name">
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-tel" type="tel" name="phone" placeholder="Phone">
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-city" type="text" name="city" placeholder="Your city">
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-email" type="email" name="email" placeholder="Email">
+                </div>
+                <div class="popup__form-input-box">
+                  <select name="select" id="select">
+                    <option value="Property type">Property type</option>
+                    <option value="Property type2">Property type1</option>
+                    <option value="Property type3">Property type2</option>
+                  </select>
+                </div>
+                <div class="popup__form-input-box">
+                  <input class="form__input form-comment" type="text" name="comment" placeholder="Your comment">
+                </div>
+              </div>
+              <div class="popup__bottom-wrapper">
+                <div class="popup__bottom-title">Area (m2)</div>
+                <ul class="popup__line">
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">to 50</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">50-150</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">150-250</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">250-400</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">400-600</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">600-800</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">800-1000</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                  <li class="popup__line-select">
+                    <button class="popup__line-button">
+                      <span class="popup__line-text">1000+</span>
+                      <span class="popup__line-point"></span>
+                    </button>
+                    <div class="popup__select-line"></div>
+                  </li>
+                </ul>
+                <div class="popup__line-bottom-wrapper">
+                  <div class="popup__upload">
+                    <input type="file" name="file" id="file" class="popup__input-file">
+                    <label class="popup__upload-label" for="file" class="btn">
+                      <span><img src="./images/popup/file.svg" alt=""></span>
+                      <span class="popup__upload-flex">
+                        <span id="file-name" class="popup__upload-title">Attach your file</span>
+                        <span class="popup__upload-subtitle">File size not more than 10 MB</span>
+                      </span>
+                    </label>
+                  </div>
+                  <button class="header__button-link form__button popup__submit" type="submit">
+                    Send Request
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="page">
+        <div data-observ></div>
+        <section class="projects">
+  <div class="_container project__container projects__container">
+    <div class="projects__body">
+      <div class="projects__top">
+        <div class="projects__left">
+          <div class="projects__title">Our Projects</div>
+        </div>
+        <div class="projects__rigth">
+          <div class="projects__box-rigth">
+            <div class="projects__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc
+              ante felis, aliquam eu enim sed, ornare pretium velit.
+            </div>
+            <ul class="projects__items">
+              <li class="projects__item">
+                <button data-filter=".category-house" class="projects__item-button mixitup-control-active">
+                  House
+                </button>
+              </li>
+              <li class="projects__item">
+                <button data-filter=".category-apartments" class="projects__item-button">
+                  Apartments
+                </button>
+              </li>
+              <li class="projects__item">
+                <button data-filter=".category-commerce" class="projects__item-button">
+                  Commerce
+                </button>
+              </li>
+              <li class="projects__item">
+                <button data-filter=".category-architecture" class="projects__item-button">
+                  Architecture
+                </button>
+              </li>
+            </ul>
+            <div class="custom-select-mobile">
+              <div class="custom-select">
+                <div class="select-header">House</div>
+                <ul class="select-list">
+                  <li data-filter=".category-house">House</li>
+                  <li data-filter=".category-apartments">Apartments</li>
+                  <li data-filter=".category-commerce">Commerce</li>
+                  <li data-filter=".category-architecture">Architecture</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects__bottom">
+        <div id="mixitupOne" class="project__bottom-body projects__bottom-body">
+          <div class="project__bg projects__bg">
+            <img src="./images/project/bg.png" alt="">
+          </div>
+          <div class="project__bottom-box">
+            <div class="category-house mix project__item">
+              <div class="project__item-body">
+                <img src="./images/project/1.png" alt="" class="project__item-img">
+                <div class="project__block-hover">
+                  <div id="hover-one" class="project__block-hover__body">
+                    <div class="project__block__top">
+                      <ul id="list-one" class="project__block-items">
+                        <li class="project__block-item">Lodz</li>
+                        <li class="project__block-item">16.10.2018</li>
+                        <li class="project__block-item">80 sq.m</li>
+                      </ul>
+                    </div>
+                    <div class="project__block__bottom">
+                      <div id="projects-title-one" class="project__block-title projects__title-hover">
+                        Eyewear store interior
+                      </div>
+                      <div id="button-one" class="project__block__button">
+                        <a class="project__block__button__item" href="#">Discover more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-house mix project__item">
+              <div class="project__item-body">
+                <img id="projects-img-two" src="./images/project/2.png" alt="" class="project__item-img">
+                <div class="project__block-hover">
+                  <div id="hover-two" class="project__block-hover__body">
+                    <div class="project__block__top">
+                      <ul id="list-two" class="project__block-items">
+                        <li class="project__block-item">Lodz</li>
+                        <li class="project__block-item">16.10.2018</li>
+                        <li class="project__block-item">80 sq.m</li>
+                      </ul>
+                    </div>
+                    <div class="project__block__bottom">
+                      <div id="projects-title-two" class="project__block-title projects__title-hover">
+                        Minimalist style home
+                      </div>
+                      <div id="button-two" class="project__block__button">
+                        <a class="project__block__button__item" href="#">Discover more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project__bottom-box project__bottom-box__big projects__big">
+            <div class="category-house mix project__item category-architecture">
+              <div class="project__item-body">
+                <img id="projects-img-three" src="./images/project/3.png" alt="" class="project__item-img project__item-img__big">
+                <div class="project__block-hover">
+                  <div id="hover-three-projects" class="project__block-hover__body">
+                    <div class="project__block__top">
+                      <ul id="list-three" class="project__block-items">
+                        <li class="project__block-item">Lodz</li>
+                        <li class="project__block-item">16.10.2018</li>
+                        <li class="project__block-item">80 sq.m</li>
+                      </ul>
+                    </div>
+                    <div class="project__block__bottom-big">
+                      <div id="projects-title-three" class="project__block-title projects__title-hover project__block-title__big">
+                        Residence by the lighthouse
+                      </div>
+                      <div id="button-three" class="project__block__button">
+                        <a id="three-button" class="project__block__button__item" href="#">Discover more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project__bottom-box">
+            <div class="category-house mix project__item category-apartments">
+              <div class="project__item-body">
+                <img id="projects-img-four" src="./images/project/4.png" alt="" class="project__item-img">
+                <div class="project__block-hover">
+                  <div id="hover-four-projects" class="project__block-hover__body">
+                    <div class="project__block__top">
+                      <ul id="list-one" class="project__block-items">
+                        <li class="project__block-item">Lodz</li>
+                        <li class="project__block-item">16.10.2018</li>
+                        <li class="project__block-item">80 sq.m</li>
+                      </ul>
+                    </div>
+                    <div class="project__block__bottom">
+                      <div id="projects-title-four" class="project__block-title projects__title-hover">
+                        Eyewear store interior
+                      </div>
+                      <div id="button-project-four" class="project__block__button">
+                        <a class="project__block__button__item" href="#">Discover more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-house mix project__item category-apartments">
+              <div class="project__item-body">
+                <img id="projects-img-six" src="./images/project/6.png" alt="" class="project__item-img project__item-img-tablet">
+                <div class="project__block-hover">
+                  <div id="hover-one" class="project__block-hover__body">
+                    <div class="project__block__top">
+                      <ul id="list-one" class="project__block-items">
+                        <li class="project__block-item">Lodz</li>
+                        <li class="project__block-item">16.10.2018</li>
+                        <li class="project__block-item">80 sq.m</li>
+                      </ul>
+                    </div>
+                    <div class="project__block__bottom">
+                      <div id="projects-title-five" class="project__block-title projects__title-hover">
+                        Eyewear store interior
+                      </div>
+                      <div id="button-project-five" class="project__block__button">
+                        <a class="project__block__button__item" href="#">Discover more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project__bottom-box project__bottom-box__big projects__big">
+            <div class="category-house mix project__item category-commerce">
+              <div class="project__item-body">
+                <img id="projects-img-seven" src="./images/project/7.png" alt="" class="project__item-img project__item-img__big">
+                <div class="project__block-hover">
+                  <div id="hover-six-projects" class="project__block-hover__body">
+                    <div class="project__block__top">
+                      <ul id="list-three" class="project__block-items">
+                        <li class="project__block-item">Lodz</li>
+                        <li class="project__block-item">16.10.2018</li>
+                        <li class="project__block-item">80 sq.m</li>
+                      </ul>
+                    </div>
+                    <div class="project__block__bottom-big">
+                      <div id="projects-title-six" class="project__block-title projects__title-hover project__block-title__big">
+                        Residence by the lighthouse
+                      </div>
+                      <div id="button-project-six" class="project__block__button">
+                        <a id="three-button" class="project__block__button__item" href="#">Discover more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="images projects__page-images">
+    <div class="_container projects__container-page">
+      <div class="images__body">
+        <div class="company__about images__about">Make request</div>
+        <div class="images__block-text">
+          <div class="images-white__left images__left">
+            <div class="images-white__title images__title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+          <div class="images-white__rigth images__rigth">
+            <div class="images-white__subtitle images__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
+              felis, aliquam eu enim sed, ornare pretium velit.
+            </div>
+            <div class="images__button">
+              <button data-type="popup" href="" class="images-white__button images__btn">
+                Make request
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="images__block">
+          <a href="">
+            <img src="./images/images/1.png" alt="">
+          </a>
+          <a href="">
+            <img src="./images/images/2.png" alt="">
+          </a>
+          <a href="">
+            <img src="./images/images/3.png" alt="">
+          </a>
+          <a href="">
+            <img src="./images/images/4.png" alt="">
+          </a>
+          <a href="">
+            <img src="./images/images/5.png" alt="">
+          </a>
+          <a href="">
+            <img src="./images/images/6.png" alt="">
+          </a>
+          <a href="">
+            <img src="./images/images/7.png" alt="">
+          </a>
+          <a href="">
+            <img src="./images/images/8.png" alt="">
+          </a>
+          <a href="">
+            <img src="./images/images/9.png" alt="">
+          </a>
+          <a href="">
+            <img src="./images/images/10.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+</section>
+ 
+      </main>
+      <footer class="footer">
+  <div class="_container footer__container">
+    <div class="footer__body">
+      <div class="footer__copyrigth">
+        <div class="footer__left">© Copyright 2018. All rights reserved</div>
+        <div class="footer__rigth">
+          <div class="footer__rigth-body">
+            <h5 class="footer__text">Made with love in</h5>
+            <div class="footer__text-wrap">
+              <div class="footer__first">The First</div>
+              <div class="footer__second">The Last.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
